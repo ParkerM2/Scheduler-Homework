@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Develop/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron text-center bg-dark text-white">
+      <h1 class="display-1 text-info">Play Day Scheduler</h1>
+      <p class="lead text-info">The same as your phone or computer has, but worse.</p>
+      <p id="currentDay" class="lead text-info text-center">text</p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-md-1 hours">
+        5am
+        </div>
+        <textarea id="text"class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        6am
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        7am
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        8am
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        9am
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        10am
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        11am
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        12pm
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        1pm
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        2pm
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        3pm
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        4pm
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        5pm
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        6pm
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours">
+        7pm
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hours dark">
+        8pm
+        </div>
+        <textarea id="text" class="col-md-9 To Do text-center">Description here</textarea>
+        <button class="btn save col-md-1 btn-dark"><i class="fas fa-save"></i></button>
+      </div>
+
+
+<!-- current date **moment.js**-->
+
+<script>
+// date set as var
+var date = document.getElementById("currentDay");
+console.log("time")
+
+// function for grabbing current date //
+function dayUpdate() {
+    var time = moment().format('MMMM Do YYYY, h:mm:ss a');
+    date.textContent = time;
+}
+dayUpdate(interval);
+var interval = setInterval(dayUpdate, 1000);
+
+$(".currentDay").html("<p>" + dayUpdate() + "The current date </p>")
+var input = document.getElementById('text');
+
+// saving data
+function saveData() {
+var input = document.getElementById('text');
+localStorage.setItem('server', input);
+var storedValue = localStorage.getItem("server")
+}
+// function for onclick
+$("<button>").on("click", function(event) {
+  //ignore if empty
+  if (input.length < 1) return;
+saveData();
+})
+console.log(text)
+
+</script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+</body>
+</html>
