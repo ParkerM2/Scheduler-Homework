@@ -149,37 +149,44 @@
 <!-- current date **moment.js**-->
 
 <script>
+
+// function for pull last inputs
+// pullSaved();
 // date set as var
 var date = document.getElementById("currentDay");
-console.log("time")
+var storedValue = localStorage.getItem("input");
+var input = document.getElementById("text");
 
 // function for grabbing current date //
 function dayUpdate() {
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
     date.textContent = time;
 }
+
 dayUpdate(interval);
+
+// making sure it updates every second
 var interval = setInterval(dayUpdate, 1000);
 
-$(".currentDay").html("<p>" + dayUpdate() + "The current date </p>")
-var input = document.getElementById('text');
 
 // saving data
-function saveData() {
-var input = document.getElementById('text');
-localStorage.setItem('server', input);
-var storedValue = localStorage.getItem("server")
-}
 // function for onclick
-$("<button>").on("click", function(event) {
+$("btn").on("click", function() {
   //ignore if empty
-  if (input.length < 1) return;
-saveData();
-})
-console.log(text)
+  event.preventDefault();
+  //saving the input
+  input.innerHTML = input;
+  localStorage.setItem("input", input);
+  consol.log(input);
+});
+
+console.log(input)
+function pullSaved() {
+  input.textContent = localStorage.getItem("input")
+}
 
 </script>
-<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
 </html>
