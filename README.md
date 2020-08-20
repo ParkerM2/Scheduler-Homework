@@ -1,3 +1,12 @@
+Event Scheduler
+Made a basic page with divs and rows to structure a calender-like event scheduler.
+It uses moment.js to show the current time
+also uses this to take the current time and show colors on the rows based off of the current time.
+The app also takes in your event description or text and saves it to local storage.
+It then shows teh text after refreshing the page.
+
+(./eventscheduler.png)
+
 # 05 Third-Party APIs: Work Day Scheduler
 
 Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
