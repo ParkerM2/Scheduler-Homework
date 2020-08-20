@@ -171,22 +171,21 @@ var interval = setInterval(dayUpdate, 1000);
 
 // saving data
 // function for onclick
-$("btn").on("click", function() {
+$("button").click(function() {
+  console.log("clicked")
   //ignore if empty
-  event.preventDefault();
   //saving the input
-  input.innerHTML = input;
-  localStorage.setItem("input", input);
-  consol.log(input);
+  $(this)
+  .closest("textarea")
+  .text();
+  console.log("hello");
+  localStorage.setItem("input",JSON.stringify());
+  console.log();
 });
 
-console.log(input)
-function pullSaved() {
-  input.textContent = localStorage.getItem("input")
-}
 
 </script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
 </body>
 </html>
