@@ -178,7 +178,7 @@ $("button").click(function() {
   var input = $(this).siblings("textarea").val();
   var hour =  $(this).siblings(".hours").text();
   console.log(input, hour);
-  localStorage.setItem(hour,input);
+  localStorage.setItem("hour",input);
 });
 function retrieve() {
 for (i=1; i < 17; i++) {
