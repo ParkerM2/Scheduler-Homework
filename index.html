@@ -149,13 +149,19 @@
 <!-- current date **moment.js**-->
 
 <script>
+// CURRENT HOUR = $(".row").css("background-color", "blue")
+// PAST HOURS = $(".row").css("background-color", "light-grey")
+// FUTURE HOURS = $(".row").css("background-color", "green")
+// CSS + Date effects
 
-// function for pull last inputs
-// pullSaved();
+if (currentTime === )
+
 // date set as var
 var date = document.getElementById("currentDay");
 var storedValue = localStorage.getItem("input");
-
+var time = moment().format('MMMM Do YYYY, h:mm:ss a');
+var currentTime = moment().format('H')
+console.log(currentTime)
 
 // function for grabbing current date //
 function dayUpdate() {
@@ -183,13 +189,15 @@ $("button").click(function() {
 
 // retrieving from local storage
 function retrieve() {
-  // for (i=1; i < 17; i++) {
-  // var input = $("#"+i).val(localStorage.getItem(i))
-  var input = localStorage.getItem(1)
-  console.log("getting back the input:", input)
-  var one = document.getElementById("1")
-  one.textContent = input;
-}
+  //for loop to run through all text areas
+  for (i=1; i < 17; i++) {
+  // using i to retreive the id's of the text areas that were saved in local storage
+  var input = $("#"+i).val(localStorage.getItem(i))
+  var input = localStorage.getItem(i)
+  // console logging the returned input to make sure its correct and working
+  console.log("getting back the input:", input);
+  
+}};
 retrieve();;
 </script>
 <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
