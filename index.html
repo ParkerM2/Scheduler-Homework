@@ -176,18 +176,21 @@ $("button").click(function() {
   //ignore if empty
   //saving the input
   var input = $(this).siblings("textarea").val();
-  var hour =  $(this).siblings(".hours").text();
+  var hour =  $(this).siblings("textarea").attr("id");
   console.log(input, hour);
-  localStorage.setItem("hour",input);
+  localStorage.setItem(hour,input);
 });
 
 // retrieving from local storage
 function retrieve() {
-for (i=1; i < 17; i++) {
-$("#"+i).val(localStorage.getItem(i))
-console.log("henlo")
-}};
-retrieve()
+  // for (i=1; i < 17; i++) {
+  // var input = $("#"+i).val(localStorage.getItem(i))
+  var input = localStorage.getItem(1)
+  console.log("getting back the input:", input)
+  var one = document.getElementById("1")
+  one.textContent = input;
+}
+retrieve();;
 </script>
 <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
